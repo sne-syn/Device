@@ -6,38 +6,38 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип интернет-магазина «Device»">
-      </a>
-      <ul class="user-navigation">
-          <li class="login-link">Вход</li>
-      </ul>
-      <ul class="item-navigation">
-        <li><a class="" href="#">Сравнить</a></li>
-        <li><a class="" href="#">Корзина</a></li>
-      </ul>
-      <ul class="nav-list nav--list__black">
-        <li><a class="" href="#">Доставка</a></li>
-        <li><a class="" href="#">Гарантия</a></li>
-        <li><a class="" href="#">Контакты</a></li>
-      </ul>
-
-      <input type="search" placeholder="Поиск по сайту">
-      <a href=#>Каталог товаров</a>
-      <ul class="menu-articles">
-        <li><a href=#>Виртуальная реальность</a></li>
-        <li><a href=#>Моноподы для селфи</a></li>
-        <li><a href=#>Экшн-камеры</a></li>
-        <li><a href=#>Фитнес-браслеты</a></li>
-        <li><a href=#>Умные часы</a></li>
-        <li><a href=#>Квадрокоптеры</a></li>
-      </ul>
+      <section class="header-user">
+        <h2 class="visually-hidden">Навигация пользователя</h2>
+        <span class="logo-header">DEVICE</span>
+        <ul class="header-user-menu">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </section>     
+      <section class="categories-navigation">
+        <input type="search" placeholder="Поиск по сайту">
+        <ul class="categories-menu">
+          <li class="categories-center">
+              <input type="checkbox" name="group" id="group">
+              <label for="group">Каталог товаров</label>
+          </li>
+            <ul class="categories-dropdowns">
+              <li><a href=#>Виртуальная реальность</a></li>
+              <li><a href=#>Моноподы для селфи</a></li>
+              <li><a href=#>Экшн-камеры</a></li>
+              <li><a href=#>Фитнес-браслеты</a></li>
+              <li><a href=#>Умные часы</a></li>
+              <li><a href=#>Квадрокоптеры</a></li>
+            </ul>
+        </ul>
+      </section>
 
     </header>
     <main>
       <section class="slider">
       <h2 class="visually-hidden">Популярные товары</h2>
-      <ul>
+      <ol>
         <li class="slider-item">
           <span>01</span>
             <section class="product-photo">
@@ -106,7 +106,7 @@
               </table>
             </section>
           </li>
-    </ul>
+    </ol>
     </section>
 
     <section class="product-catalog">
@@ -124,7 +124,7 @@
       <ul>
         <li>Доставка</li>
         <h4>Доставка</h4>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бшсплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
         <li>Гарантия</li>
         <h4>Гарантия</h4>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
@@ -176,39 +176,37 @@
     
      <section class="map">
        <h3>Контакты</h3>
-       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы цможете проверить работоспособность покупки. Всякое бывает.</p>
+       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
        <img src="img/map.svg" width="" height="" alt="Карта офиса по адресу улица Строителей, 15">
      </section>
 
     </main>
     <footer class="main-footer">
-      <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип интернет-магазина «Device»">
-      </a>
-      <p class="footer-contacts">г.Москва, ул. Строителей, 15</p>
-      <p class="footer-contacts">Тел.: +7(495)495-95-95</p>
-      <ul class="user-navigation">
-        <li class="login-link">Вход</li>
-      </ul>
-      <ul class="item-navigation">
-        <li><a class="" href="#">Сравнить</a></li>
-        <li><a class="" href="#">Корзина</a></li>
-      </ul>
-      <ul class="nav-list nav--list__white">
-        <li><a class="" href="#">Доставка</a></li>
-        <li><a class="" href="#">Гарантия</a></li>
-        <li><a class="" href="#">Контакты</a></li>
-      </ul>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          </ul>
-        </div>
-        <p class="footer-copyright">
-          <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <section class="footer-user">
+        <h2 class="visually-hidden">Для пользователя</h2>
+        <span class="logo-footer">DEVICE</span>
+        <ul class="footer-user-menu">
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </section>
+      <section class="footer-conditions">
+        <h2 class="visually-hidden">Условия покупки</h2>
+        <p>г.Москва, ул.Строителей, 15</p>
+        <p>Тел.: +7(495)495-95-95</p>
+      </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-buttons">
+          <li><a href="#" class="social-btn-facebook">Facebook</a></li>
+          <li><a href="#" class="social-btn-instagram">Instagram</a></li>
+          <li><a href="#" class="social-btn-twitter">Twitter</a></li>
+        </ul>
+        <p class="copyright">
+          <span class="icon">HTML Academy</span>
         </p>
+      </section>
     </footer>
   
 </body>
