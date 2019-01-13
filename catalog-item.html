@@ -13,9 +13,10 @@
   <header class="page-header">
     <section class="user-navigation">
       <h2 class="visually-hidden">Навигация пользователя</h2>
-      <span class="header-logo">DEVICE</span>
+      <span class="header-logo"><a href="index.html">DEVICE</a></span>
       <ul class="user-nav-menu">
-        <li><a href="#">Войти</a></li>
+        <p class="user-name">Валентин Петухов</p>
+        <li><a href="#">Выйти</a></li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
@@ -30,7 +31,7 @@
 
           <ul class="catalogue-dropdown">
             <li><a href="#0">Виртуальная реальность</a></li>
-            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
             <li><a href="#0">Экшн-камеры</a></li>
             <li><a href="#0">Фитнес-браслеты</a></li>
             <li><a href="#0">Умные часы</a></li>
@@ -51,6 +52,21 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="form-structure" action="https://echo.htmlacademy.ru" method="post">
+
+        <div class="filter-range">
+            <div class="filter-range-title">Стоимость</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+          </div>
 
         <div class="checkbox">
           <div class="checkbox-colors">
