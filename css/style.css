@@ -1,23 +1,39 @@
 @font-face {
-  font-family: "Gilroy", Arial, sans-serif;
-  src: url(../fonts/gilroyextrabold.woff2) format('woff2');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'gilroylight';
+	src: local('Gilroy Light'),
+    local('Gilroy-Light'),
+    url('gilroylight.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gilroyextrabold';
+	src: local('Gilroy ExtraBold'),
+    local('Gilroy-ExtraBold'),
+    url('gilroyextrabold.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gilroylight';
+	src: 
+    url(../fonts/gilroylight.woff2) format('woff2');
+	font-weight: 300;
+	font-style: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
 
-  font-style: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
+  font-weight: 300;
   line-height: 30px;
-  font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
-
-  background-color: #ffffff;
 }
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -28,38 +44,23 @@ body {
 }
 
 a {
-  font-family: "Gilroy", Arial, sans-serif;
-  color: rgb(0, 0, 0);
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000000;
 
   text-decoration: none;
 }
 
-li {
+.page-header li {
   list-style: none;
 }
 
-.user-nav-menu,
-.catalog-dropdown {
-  color: #000000;
-}
-
-.user-nav-menu a:hover,
-.catalog-dropdown a:hover,
-.header-conditions-menu a:hover {
-  color:rgba(0, 0, 0, 0.6);
-}
-
-.user-nav-menu a:active,
-.catalog-dropdown a:active,
-.header-conditions-menu a:active {
-  color:rgba(0, 0, 0, 0.3);
-}
-
-.header-logo {
-  font-style: bold;
-  font-size: 26px;
-  line-height: 1;
-  font-family: "Gilroy", Arial, sans-serif;
+.header-logo,
+.header-logo a {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 900;
+  font-style: normal;
   color: #000000;
 }
 
@@ -73,27 +74,86 @@ li {
 
 .catalog-label,
 .header-conditions-menu {
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-family: "Gilroy", Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.333;
-    text-align: left;
-  }
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
 
-.footer-logo a {
+.slide-number {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 900;
+  color: blue;
+}
+
+.slide-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.slide-text {
+  font: inherit;
+}
+
+.slide-btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.slide-table td {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.slide-table th {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.product-menu li {
+  list-style: none;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.processing-slider label{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.delivery h3,
+.guarantee h3,
+.credit h3 {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 900;
   font-style: normal;
-  font-size: 26px;
-  line-height: 1;
-  font-family: "Gilroy", Arial, sans-serif;
-  color: #ffc600;
+  color: #000000;
 }
 
-.footer-logo a:hover {
-  color: rgba(255, 198, 0, 0.6);
-}
-
-.footer-logo a:active {
-  color: rgba(255, 198, 0, 0.3);
-}
+.
