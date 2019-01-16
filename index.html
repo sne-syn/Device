@@ -11,7 +11,7 @@
 
 <body>
     <header class="header">
-        <span class="header--logo__black logo">Device</span>
+        <span class="header--logo logo">Device</span>
         <section class="user-menu">
             <h2 class="visually-hidden">Навигация пользователя</h2>
             <ul class="user-menu--list">
@@ -29,7 +29,7 @@
                     <label class="catalog--toggle__label" for="group">Каталог товаров</label>
 
                     <button class="catalog--toggle__icon" type="button" title="Кнопка 'плюс'">
-                            <svg></svg>
+                        <svg width="15" height="15"><line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/><line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3"/></svg>
                     </button>
 
                     <ul class="catalog--dropdown-menu">
@@ -161,18 +161,18 @@
 
             <div class="formalities--content">
                 <section class="formalities--content__delivery">
-                    <h3 class="formalities--delivery__title">Доставка</h3>
-                    <p class="formalities--delivery__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                    <h3 class="formalities--title formalities--title__delivery">Доставка</h3>
+                    <p class="formalities--text formalities--text__delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
                         неплохо заработаем, поднимая его на ваш этаж!</p>
                 </section>
                 <section class="formalities--content__guarantee">
-                    <h3 class="formalities--guarantee__title">Гарантия</h3>
-                    <p class="formalities--guarantee__text">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
+                    <h3 class="formalities--title formalities--title__guarantee">Гарантия</h3>
+                    <p class="formalities--text formalities--text__guarantee">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
                         новый.<br> Товар, не дом, конечно же.</p>
                 </section>
                 <section class="formalities--content__credit">
-                    <h3 class="formalities--credit__title">Кредит</h3>
-                    <p class="formalities--credit__text">алезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    <h3 class="formalities--title formalities--title__credit">Кредит</h3>
+                    <p class="formalities--text formalities--text__credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                 </section>
             </div>
         </div>
@@ -199,14 +199,12 @@
             <p class="about-us--text">
                 Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
-            <div class="about-us--partners">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-                компаниями:
+            <p class="about-us--text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                 <ul class="about-us--partners__list">
                     <li class="about-us--partners__item"><a href="#0">Деловые Линии</a></li>
                     <li class="about-us--partners__item"><a href="#0">Автотрейдинг</a></li>
-                    <li class="about-us--partners__item"><a href="#0">ЖелДорЭкцпедиция</a></li>
+                    <li class="about-us--partners__item"><a href="#0">ЖелДорЭкспедиция</a></li>
                 </ul>
-            </div>
             <div class="about-us--btn btn"><a href="#0">Подробнее о нас</a></div>
         </section>
 
@@ -220,7 +218,7 @@
 
     <footer class="footer">
         <section class="footer--user">
-            <span class="footer--logo__orange logo"><a href="index.html">Device</a></span>
+            <span class="footer--logo logo"><a href="index.html">Device</a></span>
             <h2 class="visually-hidden">Навигация пользователя</h2>
             <ul class="footer--user-menu__list">
                 <li class="footer--user-menu__item"><a href="#">Войти</a></li>
@@ -240,7 +238,7 @@
         </section>
         <section class="footer--social">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
-            <ul class="footer--social__btn>
+            <ul class="footer--social__btn">
                 <li><a href="#0" class="social--btn__facebook">Facebook</a></li>
                 <li><a href="#0" class="social--btn__instagram">Instagram</a></li>
                 <li><a href="#0" class="social--btn__twitter">Twitter</a></li>
@@ -253,7 +251,7 @@
 
     <section class="modal modal--contact">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal--contact__form" action="https://echo.htmlacademy.ru" method="post">
             <label for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
 
@@ -262,7 +260,7 @@
 
             <label for="comment">Текст письма:</label>
             <textarea id="comment" name="comment" rows="10" placeholder="В свободной форме"></textarea>
-            <input type="submit" value="Отправить">
+            <input class="modal--contact__btn btn" type="submit" value="Отправить">
         </form>
         <span class="modal--contact__close">x</span>
     </section>
