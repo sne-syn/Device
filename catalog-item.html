@@ -16,7 +16,7 @@
             <h2 class="visually-hidden">Навигация пользователя</h2>
             <ul class="user-menu--list">
         <li class="user-menu__item"><a href="#0">Валентин Петухов</a></li>
-        <li class="user-menu__item"><a href="#0">Выйти</a></li>
+        <li class="user-menu__item user-menu--item__nonactive"><a href="#0">Выйти</a></li>
         <li class="user-menu__item"><a href="#0">Сравнить</a></li>
         <li class="user-menu__item"><a href="#0">Корзина</a></li>
       </ul>
@@ -51,14 +51,16 @@
 </header>
 
   <main class="catalog--page">
+    <div class="container">
     <h1 class="catalog--page__title">Моноподы для селфи</h1>
     <div class="breadcrumbs">
     <ul class="breadcrumbs--list">
       <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
       <li class="breadcrumbs__item"><a href="catalog.html">Каталог товаров</a></li>
-      <li class=" breadcrumbs__item breadcrumbs--item__current">Моноподы для селфи</li>
+      <li class="breadcrumbs__item breadcrumbs--item__current">Моноподы для селфи</li>
     </ul>
   </div>
+</div>
     <section class="filter--sidebar">
       <h3 class="filter--sidebar__title">Фильтр:</h3>
       <form class="filter--sidebar__form" action="https://echo.htmlacademy.ru" method="post">
@@ -178,7 +180,7 @@
                 <img src="img/item-1.jpg" width="360" height="380" alt="«Любительская селфи-палка»">
               </a>
             </p>
-            <p class="category--item__title">Любительская селфи-палка</p>
+            <a class="category--item__title" href="#0">Любительская селфи-палка</a>
             <p class="category--item__price">500 руб.</p>
             <div class="category--item__hidden">
               <a class="hidden--basket__btn btn" href="#0">Добавить в корзину</a>
@@ -192,7 +194,7 @@
                 <img src="img/item-2.jpg" width="360" height="380" alt="«Профессиональная селфи-палка»">
               </a>
             </p>
-            <p class="category--item__title">Профессиональная селфи-палка</p>
+            <a class="category--item__title" href="#0">Профессиональная селфи-палка</a>
             <p class="category--item__price">1 500 руб.</p>
             <div class="category--item__hidden">
               <a class="hidden--basket__btn btn" href="#0">Добавить в корзину</a>
@@ -206,7 +208,7 @@
                 <img src="img/item-3.jpg" width="360" height="380" alt="«Непотопляемая селфи-палка»">
               </a>
             </p>
-            <p class="category--item__title">Непотопляемая селфи-палка</p>
+            <a class="category--item__title" href="#0">Непотопляемая селфи-палка</a>
             <p class="category--item__price">2 500 руб.</p>
             <div class="category--item__hidden">
               <a class="hidden--basket__btn btn" href="#0">Добавить в корзину</a>
@@ -220,7 +222,7 @@
                 <img src="img/item-4.jpg" width="360" height="380" alt="«Селфи-палка «Следуй за мной»">
               </a>
             </p>
-            <p class="category--item__title">Селфи-палка «Следуй за мной»</p>
+            <a class="category--item__title" href="#0">Селфи-палка «Следуй за мной»</a>
             <p class="category--item__price">4 500 руб.</p>
             <div class="category--item__hidden">
               <a class="hidden--basket__btn btn" href="#0">Добавить в корзину</a>
@@ -231,11 +233,11 @@
       </section>
 
     <ul class="pagination--list">
-      <li class="pagination__next"><a href="#0">Вперед</a></li>
+      <li class="pagination__item pagination__prev"><a href="#0">Назад</a></li>
       <li class="pagination__item pagination--item__current"><a href="#0">1</a></li>
       <li class="pagination__item"><a href="#0">2</a></li>
       <li class="pagination__item"><a href="#0">3</a></li>
-      <li class="pagination__prev"><a href="#0">Назад</a></li>
+      <li class="pagination__item pagination__next"><a href="#0">Вперед</a></li>
     </ul>
   </main>
 
@@ -267,7 +269,7 @@
               <li><a href="#0" class="social--btn__twitter">Twitter</a></li>
           </ul>
           <p class="footer--social__copyright">
-              <a href="https://htmlacademy.ru" class="social-btn-Academy">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="social-btn-Academy">HTML Academy</a>
           </p>
       </section>
   </footer>
