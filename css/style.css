@@ -477,6 +477,10 @@ cursor: pointer;
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer--user-menu--item__nonactive a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer--conditions__adress,
 .footer--conditions__number {
   font-size: 15px;
