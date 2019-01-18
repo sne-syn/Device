@@ -23,7 +23,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-family: "gilroyextrabold", Arial, sans-serif;
   color: #000000;
 }
 
@@ -100,7 +100,7 @@ a {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .user-menu--item__nonactive a {
@@ -111,11 +111,12 @@ a {
   display: inline-block;
 }
 
-.catalog--search {
+.catalog--search__input,
+.catalog--search__btn {
     font-size: 14px;
     line-height: 18px;
     font-weight: 300;
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color:  rgba(0, 0, 0, 0.3);
 
     background-color: #f7e296;
@@ -137,7 +138,7 @@ a {
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
-  font-family: "gilroylight", "Arial", sans-serif;
+  font-family: "gilroylight", Arial, sans-serif;
   color: #000000;
 }
 
@@ -148,7 +149,7 @@ a {
 .popular--item__number {
   font-size: 180px;
   line-height: 180px;
-  color:blue;
+  color:#ffc600;
 }
 
 .popular--item__title {
@@ -160,7 +161,7 @@ a {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
 }
 
@@ -179,7 +180,7 @@ a {
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
 }
 
@@ -187,7 +188,7 @@ a {
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
-  font-family: "gilroylight", "Arial", sans-serif;
+  font-family: "gilroylight", Arial, sans-serif;
 }
 
 .product--menu {
@@ -211,7 +212,7 @@ a {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
 }
 
@@ -258,7 +259,7 @@ cursor: pointer;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
 }
 
@@ -266,7 +267,7 @@ cursor: pointer;
   font-size: 47px;
   line-height: 48px;
   font-weight: 900;
-  font-family: "gilroyextrabold", "Arial", sans-serif;
+  font-family: "gilroyextrabold", Arial, sans-serif;
   color: #000000;
 }
 
@@ -280,7 +281,7 @@ cursor: pointer;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -313,7 +314,7 @@ cursor: pointer;
   font-size: 14px;
   line-height: 40px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .sort {
@@ -337,7 +338,7 @@ cursor: pointer;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -372,7 +373,7 @@ cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  font-family: "gilroylight", "Arial", sans-serif;
+  font-family: "gilroylight", Arial, sans-serif;
   color: #464646;
 }
 
@@ -384,7 +385,7 @@ cursor: pointer;
   font-size: 13px;
   line-height: 36px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -418,6 +419,12 @@ cursor: pointer;
 }
 
 .pagination--item__current a{
+  color: #000000;
+}
+
+.pagination__prev a,
+.pagination__next a {
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -458,7 +465,7 @@ cursor: pointer;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -475,7 +482,7 @@ cursor: pointer;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #ffffff;
 } 
 
@@ -498,7 +505,7 @@ cursor: pointer;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: #ffffff;
 }
 

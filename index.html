@@ -22,14 +22,22 @@
         </section>
         <nav class="catalog-navigation">
             <h2 class="visually-hidden">Каталог товаров</h2>
-            <input class="catalog--search" type="search" placeholder="Поиск по сайту">
+            <form class="catalog--search">
+                <span class="catalog--search__icon"><svg width="16px" height="16px">
+                    <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7  c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z   M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+                    </svg></span>
+                <input class="catalog--search__input" type="search" placeholder="Поиск по сайту">
+                <button type="submit"class="catalog--search__btn">Найти</button>
+            </form>
             <ul class="catalog--list">
                 <li class="catalog--toggle">
-                    <input type="checkbox" name="group" id="group">
+                    <input class="visually-hidden" type="checkbox" name="group" id="group">
                     <label class="catalog--toggle__label" for="group">Каталог товаров</label>
 
                     <button class="catalog--toggle__icon" type="toggle" title="Кнопка 'плюс'">
-                        <svg width="15" height="15"><line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/><line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3"/></svg>
+                        <svg width="15" height="15">
+                            <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
+                            <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" /></svg>
                     </button>
 
                     <ul class="catalog--dropdown-menu">
@@ -54,14 +62,14 @@
         <section class="popular">
             <h2 class="visually-hidden">Популярные товары</h2>
             <div class="popular--radio-btn">
-                <input type="radio" name="toggle" id="product-1" checked>
-                <input type="radio" name="toggle" id="product-2">
-                <input type="radio" name="toggle" id="product-3">
+                <input class="visually-hidden" type="radio" name="toggle" id="product-1" checked>
+                <input class="visually-hidden" type="radio" name="toggle" id="product-2">
+                <input class="visually-hidden" type="radio" name="toggle" id="product-3">
             </div>
             <div class="popular--controls">
-                <label for="product-1">Первый</label>
-                <label for="product-2">Второй</label>
-                <label for="product-3">Третий</label>
+                <label class="visually-hidden" for="product-1">Первый</label>
+                <label class="visually-hidden" for="product-2">Второй</label>
+                <label class="visually-hidden" for="product-3">Третий</label>
             </div>
             <ol class="popular--list">
                 <li class="popular--list__item" id="slide1">
@@ -99,7 +107,8 @@
                     </div>
                     <div class="popular--item__description">
                         <h3 class="popular--item__title">Худеем<br>правильно!</h3>
-                        <p class="popular--item__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                        <p class="popular--item__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                            пропускать занятия и соблюдать диету.</p>
                         <div class="popular--item__button btn"><a href="#0">Подробнее</a></div>
                         <table class="popular-item--table">
                             <caption class="visually-hidden">Основные xарактеристики продукта</caption>
@@ -118,7 +127,8 @@
                     </div>
                     <div class="popular--item__description">
                         <h3 class="popular--item__title">Порхает как бабочка, жалит как пчела!</h3>
-                        <p class="popular--item__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                        <p class="popular--item__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                            лазером, замаскированным под стандартную камеру.</p>
                         <div class="popular--item__button btn"><a href="#0">Подробнее</a></div>
                         <table class="popular-item--table">
                             <caption class="visually-hidden">Основные xарактеристики продукта</caption>
@@ -162,17 +172,21 @@
             <div class="formalities--content">
                 <section class="formalities--content__delivery">
                     <h3 class="formalities--title formalities--title__delivery">Доставка</h3>
-                    <p class="formalities--text formalities--text__delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                    <p class="formalities--text formalities--text__delivery">Мы с удовольствием доставим ваш товар
+                        прямо к вашему подъезду совершенно бесплатно! Ведь мы
                         неплохо заработаем, поднимая его на ваш этаж!</p>
                 </section>
                 <section class="formalities--content__guarantee">
                     <h3 class="formalities--title formalities--title__guarantee">Гарантия</h3>
-                    <p class="formalities--text formalities--text__guarantee">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
+                    <p class="formalities--text formalities--text__guarantee">Если из-за возгорания купленного у нас
+                        товара у вас сгорит дом - не переживайте, мы выдадим вам
                         новый.<br> Товар, не дом, конечно же.</p>
                 </section>
                 <section class="formalities--content__credit">
                     <h3 class="formalities--title formalities--title__credit">Кредит</h3>
-                    <p class="formalities--text formalities--text__credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    <p class="formalities--text formalities--text__credit">Залезть в долговую яму стало проще!
+                        Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего
+                        банка, разумеется.</p>
                 </section>
             </div>
         </div>
@@ -199,18 +213,20 @@
             <p class="about-us--text">
                 Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
             </p>
-            <p class="about-us--text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul class="about-us--partners__list">
-                    <li class="about-us--partners__item"><a href="#0">Деловые Линии</a></li>
-                    <li class="about-us--partners__item"><a href="#0">Автотрейдинг</a></li>
-                    <li class="about-us--partners__item"><a href="#0">ЖелДорЭкспедиция</a></li>
-                </ul>
+            <p class="about-us--text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со
+                многими транспортными компаниями:</p>
+            <ul class="about-us--partners__list">
+                <li class="about-us--partners__item"><a href="#0">Деловые Линии</a></li>
+                <li class="about-us--partners__item"><a href="#0">Автотрейдинг</a></li>
+                <li class="about-us--partners__item"><a href="#0">ЖелДорЭкспедиция</a></li>
+            </ul>
             <div class="about-us--btn btn"><a href="#0">Подробнее о нас</a></div>
         </section>
 
         <section class="contacts">
             <h3 class="contacts--title">Контакты</h3>
-            <p class="contacts--text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <p class="contacts--text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+                работоспособность покупки. Всякое бывает.</p>
             <img class="contacts--map" src="img/map.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
             <div class="contacts--btn btn"><a href="#0">Напишите нам</a></div>
         </section>
@@ -228,7 +244,7 @@
         </section>
         <section class="footer--conditions">
             <h2 class="visually-hidden">Условия покупки</h2>
-            <p class="footer--conditions__adress" >г.Москва, ул.Строителей, 15</p>
+            <p class="footer--conditions__adress">г.Москва, ул.Строителей, 15</p>
             <p class="footer--conditions__number">Тел.: +7(495)495-95-95</p>
             <ul class="footer--conditions__menu">
                 <li class="footer--conditions__item"><a href="#0">Доставка</a></li>
