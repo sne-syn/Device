@@ -28,10 +28,15 @@ body {
 }
 
 .header,
-.container {
+.container,
+.main--wrapper,
+.footer--wrapper,
+.formalities-slider,
+.brands,
+.about-us,
+.contacts {
   width: 1200px;
   margin: 0 auto;
-  margin-top: 40px;
 }
 
 .visually-hidden {
@@ -92,8 +97,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-menu__item {
-  display: inline-block;
+.user-menu--list {
 }
 
 .user-menu__item a {
@@ -192,10 +196,24 @@ a {
 }
 
 .product--menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.formalities-slider {
+.product-menu--item__icon svg {
+  width: 160px;
+  height: 160px; 
+  background-color: #f7e296;
+}
+
+.product-menu--item__title {
+  width: 160px;
+}
+
+.formalities--wrapper__background {
   background-color: #e5e5e5;
 }
 
