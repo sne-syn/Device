@@ -11,7 +11,7 @@
 
 <body class="inner-page">
   <header class="header">
-    <h1 class="header--logo logo"><a href="index.html">DEVICE</a></h1>
+    <span class="header--logo logo"><a href="index.html">DEVICE</a></span>
     <section class="user-menu">
       <h2 class="visually-hidden">Навигация пользователя</h2>
       <ul class="user-menu--list">
@@ -40,16 +40,17 @@
         <input class="catalog--search__input" type="search" placeholder="Поиск по сайту">
         <button type="submit" class="catalog--search__btn">Найти</button>
       </form>
-      <ul class="catalog--list">
-        <li class="catalog--toggle">
-          <input class="visually-hidden" type="checkbox" name="group" id="group">
-          <label class="catalog--toggle__label" for="group">Каталог товаров</label>
+      <div class="catalog--list">
+                    
+          <label class="catalog--toggle__label" for="menu-toggle">Каталог товаров
+                  <button class="catalog--toggle__icon" type="toggle" title="Кнопка 'плюс'">
+                          <svg width="15" height="15">
+                              <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
+                              <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" /></svg>
+                      </button>
+          </label>
+          <input class="catalog--toggle__checkbox" type="checkbox" name="group" id="menu-toggle">
 
-          <button class="catalog--toggle__icon" type="button" title="Кнопка 'плюс'">
-            <svg width="15" height="15">
-              <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
-              <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" /></svg>
-          </button>
           <ul class="catalog--dropdown-menu">
             <li class="catalog--dropdown-menu__item"><a href="#0">Виртуальная реальность</a></li>
             <li class="catalog--dropdown-menu__item dropdown-menu--item__current"><a href="#0">Моноподы для селфи</a></li>
@@ -58,8 +59,7 @@
             <li class="catalog--dropdown-menu__item"><a href="#0">Умные часы</a></li>
             <li class="catalog--dropdown-menu__item"><a href="#0">Квадрокоптеры</a></li>
           </ul>
-        </li>
-      </ul>
+      </div>
       <ul class="conditions--menu">
         <li class="conditions--menu__item"><a href="#0">Доставка</a></li>
         <li class="conditions--menu__item"><a href="#0">Гарантия</a></li>
