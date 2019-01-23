@@ -71,9 +71,6 @@ a {
 }
 
 .logo--black {
-  position: absolute;
-  top: -25px;
-  left: 10px;
   color: #000000;
 }
 
@@ -86,7 +83,7 @@ a {
 }
 
 .catalog__title:hover,
-.conditions__item a:hover,
+.conditions__item--dark a:hover,
 .catalog__item a:hover,
 .product__item a:hover {
   color: rgba(0, 0, 0, 0.6);
@@ -159,7 +156,7 @@ a {
   text-transform: uppercase;
 }
 
-.popular--list {
+.popular__list {
   list-style: none;
 }
 
@@ -193,7 +190,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.popular-item--table__header {
+.table__header {
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -216,13 +213,16 @@ a {
   list-style: none;
 }
 
-
 .product__title {
   width: 160px;
 }
 
 .formalities {
   background-color: #e5e5e5;
+}
+
+.formalities__list {
+  list-style: none;
 }
 
 .formalities__title,
