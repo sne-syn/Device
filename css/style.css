@@ -207,7 +207,17 @@ a {
   list-style: none;
 }
 
+.popular__item {
+  display: flex;
+}
+
+.popular__description {
+  width: 580px;
+}
+
 .popular__number {
+  display: none;
+
   font-size: 180px;
   line-height: 180px;
   color: #ffc600;
@@ -244,12 +254,26 @@ a {
   font-family: "Open Sans", Arial, sans-serif;
   color: #464646;
 }
+.table {
+  display: flex;
+  flex-direction: column;
+}
+.table__row {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .table__cell {
+  order: 1;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
   font-family: "gilroylight", Arial, sans-serif;
+}
+
+.table__cell {
+  order: -1;
 }
 
 .product__list {
@@ -268,8 +292,13 @@ a {
   background-color: #e5e5e5;
 }
 
+.formalities__slider {
+  display: flex;
+}
+
 .formalities__list {
   list-style: none;
+  width: 550px;
 }
 
 .formalities__title,
@@ -290,7 +319,14 @@ a {
 }
 
 .brands__list {
+  display: flex;
+  
   list-style: none;
+}
+
+
+.section {
+  display: flex;
 }
 
 .contact__btn,
@@ -544,6 +580,16 @@ a {
 
 .user-menu__item--light:active a {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__middle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__middle .user-menu__item--light {
+  display: flex;
+  width: 300px;
 }
 
 .company__adress,
