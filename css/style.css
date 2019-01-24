@@ -107,12 +107,12 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-menu__item--dark:hover a {
+.user-menu__item:hover a {
   color: rgba(0, 0, 0, 0.6);
 }
 
 
-.user-menu__item--dark:active a {
+.user-menu__item:active a {
   color: rgba(0, 0, 0, 0.3);
 }
 
