@@ -51,8 +51,6 @@ a {
 .header {
   position: relative;
 
-  width: 1200px;
-  margin: 0 auto;
   margin-top: 40px;
   padding-top: 50px;
 
@@ -64,21 +62,24 @@ a {
   list-style: none
 }
 
-.logo {
-  font-size: 48px;
+.logo {font-size: 48px;
   line-height: 48px;
   font-weight: 900;
 }
 
 .logo--black {
+  position: absolute;
+  top: -25px;
+  left: 30px;
+
   color: #000000;
 }
 
-.logo--black:hover {
+.inner-page .logo--black:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.logo--black:active {
+.inner-page .logo--black:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -94,6 +95,52 @@ a {
 .catalog__item a:active,
 .product__item a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.header__top {
+  display: flex;
+  width: 1200px;
+  margin: 0;
+  box-sizing:border-box; 
+  
+  justify-content: space-around;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form__btn {
+  display: none;
+}
+ .user-menu__list {
+  display: flex;
+  width: 540px;
+  justify-content: space-around;
+} 
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.catalog {
+  width: 240px;
+}
+
+.catalog__list {
+  display: none;
+}
+
+.conditions__list {
+  display: flex;
+  width: 540px;
+  justify-content: space-between;
+}
+
+.conditions__item :first-child {
+  flex-grow: 2;
 }
 
 .user-menu__item a {
@@ -290,6 +337,11 @@ a {
   color: #464646;
 }
 
+.modal-contact__btn {
+  border: none;
+  background-color: #ffffff;
+}
+
 .content__title {
   font-size: 47px;
   line-height: 48px;
@@ -466,11 +518,11 @@ a {
   color: #ffc600;
 }
 
-.logo--orange:hover {
+.inner-page .logo--orange:hover {
   color: rgba(255, 198, 0, 0.6);
 }
 
-.logo--orange:active {
+.inner-page .logo--orange:active {
   color: rgba(255, 198, 0, 0.3);
 }
 
@@ -482,7 +534,7 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.footer .user-menu__item--nonactive a {
+.footer__top .user-menu__item--nonactive a {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -494,8 +546,8 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.conditions__adress,
-.conditions__number {
+.company__adress,
+.company__number {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -522,7 +574,7 @@ a {
 }
 
 .social__list a,
-.social__copyright a {
+.social__copyright  {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
