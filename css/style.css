@@ -63,7 +63,6 @@ a {
 }
 
 .logo--black {
-  /* margin-top: 20px; */
   padding-left: 60px;
   color: #000000;
 }
@@ -164,10 +163,6 @@ a {
   margin: 0 61px 0 61px;
 
   padding: 0;
-}
-
-.catalog {
-  width: 240px;
 }
 
 .catalog__title {
@@ -471,9 +466,6 @@ a {
 }
 
 .inner-page__title {
-  margin-top: 35px;
-  padding-left: 121px;
-
   font-size: 47px;
   line-height: 48px;
   font-weight: 900;
@@ -485,7 +477,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-left: 61px;
-  margin-bottom: 50px;
   padding: 0;
   list-style: none;
 }
@@ -534,7 +525,6 @@ a {
   transform: rotate(-30deg);
 }
 
-
 .breadcrumbs__item:nth-child(2)::before,
 .breadcrumbs__item:nth-child(2)::after {
   content: "";
@@ -559,30 +549,35 @@ a {
 
 .content {
   display: flex;
-  overflow: hidden;
-  box-sizing: border-box;
+  justify-content: space-between;
 }
 
-.filter,
-.content__right {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.filter {
+  width: 468px;
   
-  height: 100%;
+  background-color: #efefef;
 }
 
-.content__right {|
-  flex-shrink: 0;
+.content__right {
+  width: 972px;
 }
 
 .filter__title {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 30px;
   text-transform: uppercase;
-  background-color: #dcdcdc;
+
+  text-align: center;
+  background-color: #d9d9d9;
 }
 
 .filter__form {
-  background-color: #efefef;
+  width: 198px;
+  margin: 0;
+  margin-left: 61px;
+  padding: 0;
+  padding-left: 100px;
 }
 
 .filter__btn {
@@ -614,8 +609,8 @@ a {
 .sort__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 560px;
+  justify-content: space-around;
+  width: 350px;
 }
 
 .sort__list,
@@ -681,26 +676,34 @@ a {
   border: none;
 }
 
+.category {
+  width: 833px;
+}
+
 .category__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 970px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
   list-style: none;
 }
 
 .category__item {
   width: 360px;
+  margin-bottom: 50px;
 }
+/* 
+.category__item:nth-child(2) {
+  margin-right: 0;
+} */
 
-.category__title {
-  display: inline-block;
-  width: 270px;
+.category__title {`
 }
 
 .category__price {
-  display: inline-block;
-  width: 90px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -733,6 +736,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 760px;
+  margin: 0;
+  margin-left: 72px;
+  margin-bottom: 76px;
+  padding: 0;
   list-style: none;
   background-color: #ebebeb;
 }
